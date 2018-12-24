@@ -726,6 +726,7 @@
                         return new Promise(function (resolve, reject) {
                             element.onload = resolve;
                             element.onerror = reject;
+                            element.crossOrigin = "Anonymous";
                             element.src = dataUrl;
                         });
                     });
