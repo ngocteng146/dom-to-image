@@ -456,6 +456,7 @@
                     resolve(image);
                 };
                 image.onerror = reject;
+                image.crossOrigin = "Anonymous";
                 image.src = uri;
             });
         }
